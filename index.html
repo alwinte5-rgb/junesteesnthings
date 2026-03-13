@@ -1996,12 +1996,12 @@
 
           <!--
             SETUP INSTRUCTIONS:
-            1. Sign up at formspree.io → create a form → copy your endpoint
-            2. Replace "YOUR_FORM_ID" below with your actual Formspree form ID
+            1. Deploy junesteesnthings-backend to Railway
+            2. Replace YOUR_RAILWAY_URL below with your actual Railway domain
             3. In your Cloudinary dashboard, create an unsigned upload preset
             4. Replace YOUR_CLOUD_NAME and YOUR_UPLOAD_PRESET in the script below
           -->
-          <form id="quote-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <form id="quote-form" action="https://YOUR_RAILWAY_URL.up.railway.app/submit" method="POST">
 
             <!-- Hidden field receives the Cloudinary photo URL after upload -->
             <input type="hidden" name="photo_url" id="photo-url-field" />
