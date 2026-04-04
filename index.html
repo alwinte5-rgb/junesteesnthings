@@ -31,10 +31,11 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
-  <!-- Splide CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
+  <!-- Splide CSS — loaded async to avoid render blocking -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" /></noscript>
 
   <style>
     /* ============================
@@ -1422,7 +1423,7 @@
   <header id="header">
     <div class="header-inner">
       <a href="#home" class="logo">
-        <img src="https://www.jtees.net/assets/images/social-share.jpg" alt="June's Tees & Things logo" />
+        <img src="https://www.jtees.net/assets/images/logo-design.jpg" alt="June's Tees & Things logo" />
         <div class="logo-text">
           June's Tees & Things
           <span>Chicago Custom Printing</span>
@@ -2116,7 +2117,7 @@
       <div class="footer-top">
         <div class="footer-brand">
           <div class="logo" style="margin-bottom:1rem;">
-            <img src="https://www.jtees.net/assets/images/social-share.jpg" alt="June's Tees & Things" style="width:44px;height:44px;border-radius:50%;object-fit:cover;" />
+            <img src="https://www.jtees.net/assets/images/logo-design.jpg" alt="June's Tees & Things" style="width:44px;height:44px;border-radius:50%;object-fit:cover;" />
             <div class="logo-text">
               June's Tees & Things
               <span>Chicago Custom Printing</span>
